@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 :root {
-  --heading-font: 'Ubuntu Condensed', sans-serif;;
+  --heading-font: 'Open Sans', sans-serif;
   --body-font: 'Open Sans', sans-serif;
   --small-text: 0.875rem;
   --extra-small-text: 0.7em;
@@ -53,7 +53,9 @@
   --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
-html {font-size: 100%;}
+html {
+  font-size: 100%;
+}
 body {
   font-family: var(--body-font);
   margin-bottom: 100px;
@@ -113,7 +115,7 @@ ul {
   line-height: var(--line-height);
   color: var(--grey-600);
 }
-.img {
+.image {
   width: 100%;
   display: block;
   object-fit: cover;
@@ -230,7 +232,6 @@ ul {
   width: 70%;
   max-width: var(--max-width);
   margin: 0 auto;
-  min-height: calc(100vh - (6rem + 4rem));
 }
 
 .navbar {
@@ -378,4 +379,50 @@ ul {
   margin: 0;
   font-size: 1.6rem;
   color: var(--primary-300);
+}
+
+.portfolio-section {
+  background-color: var(--grey-50);
+}
+.portfolio-section .main-heading h2 {
+  padding-top: .8rem;
+}
+.portfolio-section .main-heading p {
+  margin: 0 auto 50px;
+}
+.portfolio-section .portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio-section .portfolio .box {
+  position: relative;
+}
+.portfolio-section .portfolio .box .text {
+  position: absolute;
+  padding-left: 1.5em;
+  padding-right: .5em;
+  padding-bottom: 1.5em;
+  background-color: var(--grey-200);
+  width: 100%;
+  transition: var(--transition);
+  visibility: hidden;
+  bottom: 0; 
+  opacity: 0;
+}
+.portfolio-section .portfolio .box:hover .text {
+  visibility: visible;
+  opacity: 1;
+}
+.portfolio-section .portfolio .box .text h5 {
+  margin-bottom: 0;
+}
+.portfolio-section .portfolio .box .text span {
+  display: inline-block;
+  background-color: var(--primary-200);
+  color: var(--grey-100);
+  padding: .2em .7em;
+  margin-bottom: 10px;
+  border-radius: var(--border-radius);
+  width: fit-content;
 }

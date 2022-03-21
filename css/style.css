@@ -459,3 +459,62 @@ ul {
   margin: 0 auto;
   max-width: 700px;
 }
+
+.stats-section {
+  background-color: var(--black);
+  position: relative;
+  text-align: center;
+  padding: 50px 0;
+}
+.stats-section .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.stats-section .container .box {
+  color: white;
+  padding: 50px;
+  background-color: rgba(0, 145, 185, 0.432);
+  width: 100%;
+}
+.stats-section .container .box i {
+  display: flex;
+  background-color: var(--black);
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  margin-bottom: 1.2em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 1.4em;
+}
+.stats-section .container .box .number {
+  font-size: 50px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.stats-section .container .box p {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 1em;
+}
+@media (max-width: 767px) {
+    .stats .container .box {
+      flex-basis: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .stats-section .container .box {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .stats-section .container {
+    flex-wrap: nowrap;
+  }
+  .stats-section .container .box {
+    flex-basis: 25%;
+  }
+}

@@ -7,8 +7,8 @@
 :root {
   --heading-font: 'Open Sans', sans-serif;
   --body-font: 'Open Sans', sans-serif;
-  --small-text: 0.875rem;
-  --extra-small-text: 0.7em;
+  --small-text: 0.9rem;
+  --extra-small-text: 0.8em;
   --primary-100: #19c8fa;
   --primary-200: #17b4e1;
   --primary-300: #14a0c8;
@@ -29,14 +29,12 @@
   --grey-800: #1e293b;
   --grey-900: #0f172a;
   --transparent-color: rgba(18, 140, 175, 0.8);
-  --black: #222;
+  --black: #131313;
   --white: #fff;
   --red-light: #f8d7da;
   --red-dark: #842029;
   --green-light: #d1e7dd;
   --green-dark: #0f5132;
-  --small-text: 0.875rem;
-  --extra-small-text: 0.7em;
   --background-color: var(--grey-50);
   --text-color: var(--grey-900);
   --border-radius: 0.25rem;
@@ -445,7 +443,7 @@ ul {
   font-weight: 700;
 }
 .quote-section .text span {
-  font-size: .9em;
+  font-size: var(--small-text);
   font-weight: bold;
   margin: 0 auto;
 }
@@ -474,7 +472,7 @@ ul {
 }
 .stats-section .container .box {
   color: white;
-  padding: 50px;
+  padding: 25px;
   background-color: rgba(0, 145, 185, 0.432);
   width: 100%;
 }
@@ -496,7 +494,7 @@ ul {
   font-weight: bold;
 }
 .stats-section .container .box p {
-  font-size: 14px;
+  font-size: var(--small-text);
   font-weight: 700;
   margin-top: 1em;
 }
@@ -517,4 +515,83 @@ ul {
   .stats-section .container .box {
     flex-basis: 25%;
   }
+}
+
+.team-info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-info-section .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.team-info-section .testimonials-section h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: left;
+}
+.team-info-section .testimonials-section .box {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin-bottom: 2em;
+}
+.team-info-section .testimonials-section .box .image {
+  border-radius: 50%;
+  width: 6em;
+  height: 6em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+.team-info-section .testimonials-section .box .text {
+  max-width: 320px;
+  border-bottom: 1px solid var(--grey-400);
+  padding-bottom: 1em;
+}
+.team-info-section .testimonials-section .box p {
+  font-size: var(--extra-small-text);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0;
+  font-style: italic;
+  color: var(--grey-500);
+  text-align: right;
+}
+@media (max-width: 414px) {
+  .team-info-section .testimonials-section .box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .team-info-section .container > div {
+    flex-basis: 48%;
+  }
+}
+.team-info-section .skills-section {
+  width: 100%;
+}
+.team-info-section .skills-section h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: left;
+}
+.team-info-section .skills-section .progress-holder h5 {
+  margin-bottom: 0;
+}
+.team-info-section .skills-section .progress-holder .progress {
+  height: 20px;
+  background-color: var(--grey-600);
+  border-radius: var(--border-radius);
+}
+.team-info-section .skills-section .progress-holder .progress span {
+  display: block;
+  background-color: var(--primary-200);
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  height: 100%;
+  position: relative;
 }

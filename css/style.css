@@ -109,7 +109,7 @@ ul {
 }
 .main-heading p {
   width: 430px;
-  margin: 0 auto 100px;
+  margin: 0 auto 60px;
   max-width: 100%;
   line-height: var(--line-height);
   color: var(--grey-600);
@@ -162,13 +162,11 @@ ul {
   background: var(--green-light);
 }
 .form {
-  width: 90vw;
   max-width: var(--fixed-width);
   background: var(--white);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-2);
   padding: 2rem 2.5rem;
-  margin: 3rem auto;
 }
 .form-label {
   display: block;
@@ -190,6 +188,7 @@ ul {
 }
 .form-textarea {
   height: 7rem;
+  resize: vertical;
 }
 ::placeholder {
   font-family: inherit;
@@ -624,7 +623,7 @@ ul {
   gap: 30px;
 }
 .pricing-section .plans .plan {
-  background-color: var(--grey-200);
+  background-color: var(--grey-100);
   text-align: center;
 }
 .pricing-section .plans .plan .head {
@@ -678,7 +677,7 @@ ul {
   margin: 40px 0;
 }
 .pricing-section .plans .plan .buy-button .button {
-  background-color: var(--grey-200);
+  background-color: var(--grey-100);
   box-shadow: none;
   border: 1px solid var(--primary-200);
   padding: 15px 20px;
@@ -693,4 +692,28 @@ ul {
 }
 .pricing-section .plans .plan .buy-button .button a {
   color: var(--black);
+}
+
+.contact-section .form {
+  margin: 0 auto;
+}
+
+.footer-section {
+  text-align: center;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black);
+  color: var(--white);
+  margin-top: 1.6rem;
+  margin-bottom: -1000px;
+}
+.footer-section p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.footer-section .footer-logo,
+.footer-section a {
+  color: var(--primary-100);
 }

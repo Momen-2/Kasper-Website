@@ -108,13 +108,6 @@ ul {
 .main-heading h2 {
   margin-bottom: .8rem;
 }
-.main-heading p {
-  width: 430px;
-  margin: 0 auto 60px;
-  max-width: 100%;
-  line-height: var(--line-height);
-  color: var(--grey-600);
-}
 .image {
   width: 100%;
   display: block;

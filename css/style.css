@@ -109,7 +109,8 @@ ul {
   margin-bottom: .8rem;
 }
 .main-heading p {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .image {
   width: 100%;

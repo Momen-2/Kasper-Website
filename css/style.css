@@ -108,6 +108,9 @@ ul {
 .main-heading h2 {
   margin-bottom: .8rem;
 }
+.main-heading p {
+  margin: 0 auto;
+}
 .image {
   width: 100%;
   display: block;
